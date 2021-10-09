@@ -9,8 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            Color.blue
+            VStack {
+                Text("Welcome to Code History!")
+                    .foregroundColor(.white)
+                    .font(.title)
+                    .padding()
+                Button(action: {
+                    print("Clicked")
+                }, label: {
+                    Text("Click me")
+                })
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+            }
+        }
     }
 }
 
