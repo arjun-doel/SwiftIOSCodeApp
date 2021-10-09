@@ -8,23 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    let mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
+    let accentColor = Color(red: 48/255, green: 105/255, blue: 240/255)
+    
     var body: some View {
         ZStack {
-            Color.blue
-            VStack {
-                Text("Welcome to Code History!")
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .padding()
-                Button(action: {
-                    print("Clicked")
-                }, label: {
-                    Text("Click me")
-                })
-                .padding()
-                .background(Color.blue)
-                .foregroundColor(.white)
-            }
+            mainColor
         }
     }
 }
